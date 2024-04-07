@@ -1,2 +1,2 @@
-# rl-project-2048
-Reinforcement learning project, modelling the game 2048 for CISC 474.
+# rl-project
+Reinforcement learning project, modelling a novel Tic Tac Toe-like game for CISC 474.

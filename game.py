@@ -116,12 +116,13 @@ class Abba:
                         legal_states.append(new_state)
         return legal_states
 
-    def legal_actions(self):
+    def legal_actions(self, state=None):
         """Returns all the legal actions."""
         actions = list()
+        board = self.board if state is None else state
         for i in range(self.n):
             for j in range(self.n):
-                if self.board[i][j] == self.empty_mark:
+                if board[i][j] == self.empty_mark:
                     actions += [f'{mark}({i},{j})' for mark in self.marks]
         return actions
 
